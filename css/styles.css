@@ -1,0 +1,322 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.first-section {
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.457);
+    background-position: center;
+    height: 750px;
+    background-blend-mode: multiply;
+}
+.logo {
+    color:white;
+    font-size: 30px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+ul {
+    display: flex;
+}
+ul > li {
+    list-style: none;
+}
+ul > li > a{
+    text-decoration: none;
+    padding-left: 30px;
+    color:white;
+}
+nav > i {
+    color: white;
+}
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.hero-section > h1 {
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    font-size: 50px;
+}
+.hero-section > p {
+    font-size: 20px;
+    color: white;
+    margin-top: 40px;
+}
+
+.input {
+    border-radius: 30px;
+    border: solid white;
+    align-items: center;
+    margin-top: 40px;
+    width: 250px;
+}
+.input > input {
+    background-color: transparent;
+    border: 0px;
+    border-radius: 30px;
+    height: 30px;
+    text-align: center; 
+    width: 200px;
+}
+input::placeholder {
+    color: white;
+}
+.input > i{
+    background-color: rgb(243, 128, 46);
+    color: white;
+    font-size: 20px;
+    border-radius: 20px; 
+}
+.why {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    box-shadow: 0px 8px 49px 140px white;
+}
+.section2 {
+    width: 300px;
+    margin-left: 20px;
+}
+.Why-choose-us {
+    font-size: 20px;
+    text-align: left;
+    margin: auto 30px;
+    width: 150px;
+
+}
+.furniture {
+    margin-top: 40px;
+    padding-top: 40px;
+    background-color: rgb(249, 249, 249);
+    text-align: center;
+}
+.product {
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    width: 250px;
+    margin: 10px auto;
+    border-radius: 30px;
+}
+.product > div {
+    padding: 12px;
+}
+.product > div:hover {
+    background-color: white;
+    border-radius: 30px;
+}
+.chair {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chair1,.chair2, .chair3, .chair4 {
+    width: 180px;
+    padding-top: 50px;
+}
+.price1, .price2, .price3, .price4 {
+    background-color: white;
+    width: 200px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+.price1 > h3 {
+    text-align: left;
+}
+.price1 > p {
+    text-align: left;
+}
+.price2 > h3 {
+    text-align: left;
+}
+.price2 > p {
+    text-align: left;
+}
+.price3 > h3 {
+    text-align: left;
+}
+.price3 > p {
+    text-align: left;
+}
+.price4 > h3 {
+    text-align: left;
+}
+.price4 > p {
+    text-align: left;
+}
+.experience {
+    background-color: white;
+    display: flex;
+    margin-top: 70px;
+    padding-top: 70px;
+}
+.img1 > img {
+    border-radius: 30px;
+    margin-left: 30px;
+    height: 250px;
+    width: 300px; 
+}
+.Our-services {
+    width: 300px;
+    margin-left: 50px;
+    height: 400px;
+}
+.Our-services > h3 {
+    color: rgb(237, 136, 13);
+}
+.Our-services > h2 {
+    padding-top: 6px;
+}
+.Our-services > p {
+    font-size: 14px;
+    padding-top: 6px;
+}
+footer {
+    display: flex;
+    margin-top: 40px;
+}
+.material {
+    width: 300px;
+    margin-left: 70px;
+}
+.material > h3 {
+    color: rgb(237, 136, 13);
+}
+.material > h2 {
+    padding-top: 6px;
+}
+.material > p {
+    font-size: 14px;
+    padding-top: 6px;
+}
+.material2 {
+    margin-left: 30px;
+    height: 200px;
+    border-radius: 25px;
+}
+.material1 {
+    height: 200px;
+    border-radius: 25px;
+    margin-left: 40px;
+}
+#menu {
+    display: none;
+}
+#mobile-menu {
+    display: none;
+}
+
+/* media query for mobile screen */
+@media screen and (max-width:767px) {
+    #desktop-menu {
+        display: none;
+    }
+    #menu {
+        display: block;
+        font-size: 20px;
+        color: white;
+        margin-right: 10px;
+    }
+    nav > i{
+        display: none;
+    }
+    #mobile-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 1px;
+        top: 58px;
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+    }
+    #mobile-menu > li {
+        padding-top: 30px;
+    }
+    #mobile-menu > li >a {
+        color: black;
+    }
+    .why {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0px
+    }
+    .Why-choose-us{
+        width: 250px;
+        margin: auto auto;
+    }
+    .section2 {
+        margin-left: 0px;
+        width: 100% !important;
+        padding: 20px;
+        
+    }
+    .chair {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-section > h1 {
+        margin-top: 40px;
+        font-size: 30px;
+    }
+    .hero-section > p {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .shadow{
+        position: absolute;
+        bottom: -310px;
+        width: 100% !important;
+    }
+    .img1 > img {
+        border-radius: 30px;
+        margin-left: 0px;
+        width: 250px; 
+    }
+    .Our-services {
+        width: 100%;
+        height: 300px;
+        margin-left: 0px;
+    }
+    .Our-services > h3 {
+        margin-top: 30px;
+    }
+    .experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+    .material {
+        width: 100% !important;
+        margin-left: 0px;
+    }
+    .material2 {
+        margin-top: 30px;
+        height: 200px;
+        width: 250px;
+        margin-left: 0px;
+    }
+    .material1 {
+        height: 200px;
+        width: 200px;
+        margin: 30px 50px 0px 0px;
+    }
+}
